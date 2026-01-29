@@ -22,47 +22,47 @@ export default {
           imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png',
           status: 'Advanced'
         },
-        {
+                {
           id: 4,
-          name: 'PHP',
-          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-php-2038871-1720084.png',
+          name: 'ReactJS',
+          imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
           status: 'Advanced'
         },
         {
           id: 5,
-          name: 'Laravel',
-          imageUrl: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
-          status: 'Advanced'
-        },
-        {
-          id: 6,
           name: 'AngularJS',
           imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
           status: 'Advanced'
         },
-        {
-          id: 7,
-          name: 'NodeJS',
-          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png',
-          status: 'Advanced'
-        },
-        {
-          id: 8,
-          name: 'Express',
-          imageUrl: 'https://expressjs.com/images/express-facebook-share.png',
-          status: 'Advanced'
-        },
-        {
-          id: 9,
+                {
+          id: 6,
           name: 'TypeScript',
           imageUrl: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
           status: 'Advanced'
         },
         {
+          id: 7,
+          name: 'PHP',
+          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-php-2038871-1720084.png',
+          status: 'Advanced'
+        },
+        {
+          id: 8,
+          name: 'Laravel',
+          imageUrl: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
+          status: 'Advanced'
+        },
+        {
+          id: 9,
+          name: 'NodeJS',
+          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png',
+          status: 'Advanced'
+        },
+        {
           id: 10,
-          name: 'ReactJS',
-          imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
-          status: 'Intermediate'
+          name: 'ExpressJS',
+          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png',
+          status: 'Advanced'
         },
         {
           id: 11,
@@ -75,12 +75,6 @@ export default {
           name: 'Tailwind',
           imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
           status: 'Advanced'
-        },
-        {
-          id: 13,
-          name: 'VueJS',
-          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg',
-          status: 'Intermediate'
         },
         
        
@@ -138,12 +132,12 @@ export default {
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
         <div class="flex justify-center">
           <img class="w-9/12 rounded-full mb-3 fadein-up"
-            src="https://i.postimg.cc/1RWtjZrw/photo-2025-10-26-12-49-27.jpg" alt="Foto">
+            src="https://i.postimg.cc/L4QJc0mV/Gemini-Generated-Image-rsl2f1rsl2f1rsl2.png" alt="Foto">
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hi everyone! My name is Reda Abdelaziem Shalabi. I'm a web developer from Egypt. I
-            have 1 year of experience in Full Stack web development.
+            &nbsp; &nbsp; &nbsp; Hi everyone! My name is Reda Abdelaziem Shalabi. I'm a web developer from Egypt. I'm a
+             professional junior Full Stack web development.
             I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that
             has
             aesthetic value

@@ -21,16 +21,34 @@ const routes = [
     meta: { title: 'Portfolio' }
   },
   {
-    path: '/blog',
-    name: 'blog',
-    component: () => import('../views/BlogView.vue'),
-    meta: { title: 'Blog' }
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/ContactView.vue'),
+    meta: { title: 'Contact' }
+  },
+  {
+    path: '/education',
+    name: 'education',
+    component: () => import('../views/EducationView.vue'),
+    meta: { title: 'Education' }
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: () => import('../views/ServicesView.vue'),
+    meta: { title: 'Services' }
   },
   {
     path: '/read/:slug/:id',
     name: 'articleDetail',
     component: () => import('../views/ArticleView.vue'),
     meta: { title: 'Blog' }
+  },
+  {
+    path: '/project/:id',
+    name: 'projectDetail',
+    component: () => import('../views/ProjectDetailView.vue'),
+    meta: { title: 'Project' }
   }
 ]
 

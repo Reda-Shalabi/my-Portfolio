@@ -21,7 +21,7 @@
 
       <div class="pt-5 flex justify-center md:justify-start">
         <a
-          href="/pdf/cv.pdf"
+          href="/pdf/My_Resume.pdf"
           download="Reda-Shalabi-CV.pdf"
           class="fadein-bot fade-500 flex items-center py-2 px-4 text-sm md:text-base font-medium rounded-lg border border-amber-200 text-amber-200 transition duration-300 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-full sm:w-fit"
         >
@@ -62,7 +62,7 @@ export default {
   name: 'HomeView',
   data() {
     return {
-      toRotate: ["Web Developer", "Full-stack Engineer", "Computer Science Student", "Tech Enthusiast"],
+      toRotate: ["Full Stack Developer"],
       period: 2000,
       txt: '',
       loopNum: 0,
