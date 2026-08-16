@@ -52,18 +52,30 @@
 
       <!-- Quick Highlights -->
       <div class="pt-6 flex flex-wrap gap-2 justify-center md:justify-start fadein-bot">
-        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">⚡ Full Stack Development</span>
-        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">🚀 Laravel & Node.js</span>
-        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">💻 Vue & React</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-amber-200/40 text-amber-100 flex items-center gap-1.5 shadow-sm">
+          ⚛️ React.js
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-green-500/40 text-green-300 flex items-center gap-1.5 shadow-sm">
+          🟢 Node.js
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300 flex items-center gap-1.5">
+          ⚡ MERN Stack
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">
+          💻 Full Stack
+        </span>
       </div>
     </div>
 
     <div class="flex fadein-right">
-      <img
-        alt="Reda Shalabi"
-        class="ml-auto w-[220px] h-[220px] sm:w-[270px] sm:h-[270px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px] object-cover object-top transition-all duration-500 hover:scale-105 rounded-full border-4 border-amber-200 pict float"
-        src="/img/hero-avatar.jpg"
-      />
+      <div class="ml-auto w-[220px] h-[220px] sm:w-[270px] sm:h-[270px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden border-4 border-amber-200 pict float">
+        <img
+          alt="Reda Shalabi"
+          class="w-full h-full object-cover transition-all duration-500 hover:scale-105"
+          style="object-position: 50% 65%;"
+          src="/img/hero-avatar.jpg"
+        />
+      </div>
     </div>
 
   </main>
@@ -75,10 +87,10 @@ export default {
   data() {
     return {
       toRotate: [
-        "Full Stack Developer",
-        "Backend Developer (Laravel & PHP)",
+        "React.js Developer",
+        "Node.js Developer",
         "MERN Stack Developer",
-        "Frontend Developer (Vue & React)"
+        "Full Stack Developer"
       ],
       period: 2000,
       txt: '',
