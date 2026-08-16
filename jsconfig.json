@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
+    "target": "es2020",
+    "module": "NodeNext",
     "baseUrl": "./",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": [
         "src/*"

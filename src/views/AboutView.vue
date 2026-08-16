@@ -30,11 +30,11 @@ export default {
         },
         {
           id: 5,
-          name: 'AngularJS',
-          imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+          name: 'VueJS',
+          imageUrl: 'https://vuejs.org/images/logo.png',
           status: 'Advanced'
         },
-                {
+        {
           id: 6,
           name: 'TypeScript',
           imageUrl: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
@@ -76,8 +76,6 @@ export default {
           imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
           status: 'Advanced'
         },
-        
-       
       ],
       tools: [
         {
@@ -98,8 +96,8 @@ export default {
           imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png',
           status: 'Package Manager'
         },
-          {
-          id:4,
+        {
+          id: 4,
           name: 'MongoDB',
           imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-mongodb-5-1175140.png',
           status: 'Database'
@@ -130,9 +128,9 @@ export default {
 
       <section
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
-        <div class="flex justify-center">
-          <img class="w-9/12 rounded-full mb-3 fadein-up"
-            src="https://i.postimg.cc/L4QJc0mV/Gemini-Generated-Image-rsl2f1rsl2f1rsl2.png" alt="Foto">
+        <div class="flex justify-center flex-shrink-0">
+          <img class="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover object-center rounded-2xl border-2 border-amber-200/40 shadow-2xl mb-3 fadein-up"
+            src="/img/about-avatar.jpg" alt="Reda Shalabi">
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">

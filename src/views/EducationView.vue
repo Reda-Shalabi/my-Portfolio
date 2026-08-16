@@ -18,7 +18,7 @@ export default {
           icon: 'code',
           isActive: false,
           // update this path or place the file at public/img/cert-nti.png
-          certificatePhoto: 'https://i.postimg.cc/K8tHz26k/Screenshot-2026-01-28-140803.png'
+          certificatePhoto: 'https://i.postimg.cc/SRwB86j1/photo-2026-05-15-21-22-12.jpg'
         },
         
         {

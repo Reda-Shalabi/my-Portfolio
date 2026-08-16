@@ -19,11 +19,11 @@
         Welcome to my personal website. <span class="wave">👋🏼</span>
       </p>
 
-      <div class="pt-5 flex justify-center md:justify-start">
+      <div class="pt-5 flex flex-wrap justify-center md:justify-start gap-3">
         <a
           href="/pdf/My_Resume.pdf"
           download="Reda-Shalabi-CV.pdf"
-          class="fadein-bot fade-500 flex items-center py-2 px-4 text-sm md:text-base font-medium rounded-lg border border-amber-200 text-amber-200 transition duration-300 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-full sm:w-fit"
+          class="fadein-bot fade-500 flex items-center justify-center py-2.5 px-5 text-sm md:text-base font-medium rounded-lg border border-amber-200 text-amber-200 transition duration-300 hover:bg-amber-200 hover:text-black bg-transparent focus:outline-none w-full sm:w-fit"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,17 +42,29 @@
           </svg>
           Download Resume
         </a>
-      </div>
+        <router-link
+          to="/portfolio"
+          class="fadein-bot fade-500 flex items-center justify-center py-2.5 px-5 text-sm md:text-base font-medium rounded-lg bg-amber-200 bg-opacity-10 text-amber-200 hover:bg-opacity-20 border border-amber-200/30 transition duration-300 w-full sm:w-fit"
+        >
+          View Projects &rarr;
+        </router-link>
       </div>
 
-<div class="flex fadein-right">
- <img
-  alt="avatar"
-  class="ml-auto w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] transition-all duration-500 hover:scale-105 rounded-full border-4 border-amber-200 pict float"
-  src="https://i.postimg.cc/1RWtjZrw/photo-2025-10-26-12-49-27.jpg"
-/>
+      <!-- Quick Highlights -->
+      <div class="pt-6 flex flex-wrap gap-2 justify-center md:justify-start fadein-bot">
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">⚡ Full Stack Development</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">🚀 Laravel & Node.js</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">💻 Vue & React</span>
+      </div>
+    </div>
 
-</div>
+    <div class="flex fadein-right">
+      <img
+        alt="Reda Shalabi"
+        class="ml-auto w-[220px] h-[220px] sm:w-[270px] sm:h-[270px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px] object-cover object-top transition-all duration-500 hover:scale-105 rounded-full border-4 border-amber-200 pict float"
+        src="/img/hero-avatar.jpg"
+      />
+    </div>
 
   </main>
 </template>
@@ -62,7 +74,12 @@ export default {
   name: 'HomeView',
   data() {
     return {
-      toRotate: ["Full Stack Developer"],
+      toRotate: [
+        "Full Stack Developer",
+        "Backend Developer (Laravel & PHP)",
+        "MERN Stack Developer",
+        "Frontend Developer (Vue & React)"
+      ],
       period: 2000,
       txt: '',
       loopNum: 0,

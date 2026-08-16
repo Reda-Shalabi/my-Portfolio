@@ -4,8 +4,21 @@ export default {
     return {
       project: null,
       projects: [
-        {
+       {
           id: 1,
+          name: 'Whales Academy - LMS Platform',
+          imageUrl: '/img/image.png',
+          status: 'A comprehensive Learning Management System (LMS) designed for secure course delivery and student management.',
+          tech: 'MERN Stack (MongoDB, Express, React.js, Node.js), Nginx, SSL',
+          github: 'null',
+          demo: 'https://whales-academy.com/',
+          description: 'Whales Academy is a high-performance educational platform featuring secure video streaming, automated enrollment, and device fingerprinting to prevent account sharing.',
+          features: ['Device Fingerprinting & Anti-Fraud System','Secure Video Streaming Integration (Bunny.net)','Automated Payment & E-money System',
+                     'Real-time Notifications & Course Progress Tracking','Responsive Design', 'Dark Theme', 'Smooth Animations', 'Modern UI/UX'],
+          videoUrl: 'null'
+        },
+        {
+          id: 2,
           name: 'Personal Website',
           imageUrl: 'photo',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
@@ -17,7 +30,7 @@ export default {
           videoUrl: 'https://vimeo.com/1142073576?share=copy&fl=sv&fe=ci'
         },
         {
-          id: 2,
+          id: 3,
           name: 'E-Commerce Website',
           imageUrl: 'E-CommerceWebsite',
           status: 'A website that has a responsive display to make it easier for Customer to make Order from anywhere.',
@@ -29,7 +42,7 @@ export default {
           videoUrl: 'https://vimeo.com/1139618865?share=copy&fl=sv&fe=ci'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Resturant',
           imageUrl: 'resturant',
           status: 'A modern restaurant website with an elegant design, menu showcase, online table booking, and contact section for customer interaction.',
@@ -40,42 +53,7 @@ export default {
           features: ['Menu Showcase', 'Table Booking', 'Contact Form', 'Responsive Design'],
           videoUrl: null
         },
-        {
-          id: 4,
-          name: 'SISTEKDES',
-          imageUrl: 'sistekdes',
-          status: 'Sistem Informasi dan Teknologi Desa, a web application to assist village government work in administration, population data management, community services, etc.',
-          tech: 'Laravel 9, Bootstrap',
-          github: 'null',
-          demo: 'null',
-          description: 'A comprehensive village information and technology system to assist village government in administration, population data management, and community services.',
-          features: ['Administration Management', 'Population Data', 'Community Services', 'Reports'],
-          videoUrl: null
-        },
-        {
-          id: 5,
-          name: 'Bumdesma',
-          imageUrl: 'bumdesma',
-          status: 'a web application used by village-owned enterprises at the sub-district level to make it easier for them in terms of accounting that is equipped with a microfinance balance.',
-          tech: 'Laravel 8, Bootstrap',
-          github: 'null',
-          demo: 'null',
-          description: 'A web application for village-owned enterprises to manage accounting and microfinance operations at the sub-district level.',
-          features: ['Accounting System', 'Microfinance Management', 'Financial Reports', 'User Management'],
-          videoUrl: null
-        },
-        {
-          id: 6,
-          name: 'SP2SE',
-          imageUrl: 'sp2se',
-          status: 'Sistem Percepatan Pelayanan Surat Elektronik, A web application to manage letters in the village.',
-          tech: 'Codeigniter 3, Bootstrap',
-          github: 'null',
-          demo: 'null',
-          description: 'An electronic letter service acceleration system for managing village letters and documents efficiently.',
-          features: ['Letter Management', 'Document Tracking', 'Digital Signatures', 'Archive System'],
-          videoUrl: null
-        }
+
       ]
     };
   },
