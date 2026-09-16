@@ -52,14 +52,17 @@
 
       <!-- Quick Highlights -->
       <div class="pt-6 flex flex-wrap gap-2 justify-center md:justify-start fadein-bot">
-        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#1e1e1f] border border-amber-200/50 text-amber-200 flex items-center gap-1.5 shadow-md">
-          ⚡ MERN Stack
-        </span>
-        <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-[#1e1e1f] border border-cyan-400/40 text-cyan-300 flex items-center gap-1.5 shadow-sm">
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-amber-200/40 text-amber-100 flex items-center gap-1.5 shadow-sm">
           ⚛️ React.js
         </span>
-        <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-[#1e1e1f] border border-green-500/40 text-green-300 flex items-center gap-1.5 shadow-sm">
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-green-500/40 text-green-300 flex items-center gap-1.5 shadow-sm">
           🟢 Node.js
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300 flex items-center gap-1.5">
+          ⚡ MERN Stack
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#1e1e1f] border border-[#383838] text-gray-300">
+          💻 Full Stack
         </span>
       </div>
     </div>
@@ -69,7 +72,7 @@
         <img
           alt="Reda Shalabi"
           class="w-full h-full object-cover transition-all duration-500 hover:scale-105"
-          style="object-position: 50% 38%;"
+          style="object-position: 50% 65%;"
           src="/img/hero-avatar.jpg"
         />
       </div>
@@ -84,9 +87,10 @@ export default {
   data() {
     return {
       toRotate: [
-        "MERN Stack Developer",
         "React.js Developer",
-        "Node.js Developer"
+        "Node.js Developer",
+        "MERN Stack Developer",
+        "Full Stack Developer"
       ],
       period: 2000,
       txt: '',
