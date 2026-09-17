@@ -72,7 +72,7 @@
         <img
           alt="Reda Shalabi"
           class="w-full h-full object-cover transition-all duration-500 hover:scale-105"
-          style="object-position: 50% 65%;"
+          style="object-position: 55% 33%;"
           src="/img/hero-avatar.jpg"
         />
       </div>

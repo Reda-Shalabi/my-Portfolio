@@ -24,7 +24,7 @@ export default {
           institution: 'PureSoft Company',
           program: 'Backend Developer Intern',
           Skills: 'laravel - php - mysql - api - restful api - postman - git - github - Object-Oriented Programming (OOP) ',
-          status: 'in Progress',
+          status: 'Completed with Certificate',
           Location_type: 'On-Site',
           Mode: 'Offline',
           icon: 'code',
