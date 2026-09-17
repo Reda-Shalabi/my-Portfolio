@@ -5,8 +5,20 @@ export default {
       // currently opened image for the modal (null = closed)
       modalImage: null,
       education: [
-
-              {
+        {
+          id: 7,
+          year: '2026',
+          institution: 'Huawei ICT Academy (华为ICT学院)',
+          program: 'General Knowledge of Cloud Computing',
+          duration: 'Certificate Code: ICT20260907000084',
+          status: 'Completed with Certificate (Issue Date: 2026-09-07)',
+          Skills: 'Cloud Computing Fundamentals - Cloud Architecture - Cloud Services - Virtualization',
+          Mode: 'Online',
+          icon: 'certificate',
+          isActive: true,
+          certificatePhoto: '/img/cert-huawei-cloud.png'
+        },
+        {
           id: 6,
           year: '2026',
           institution: 'PureSoft Company',
@@ -126,6 +138,9 @@ export default {
               </svg>
               <svg v-else-if="item.icon === 'code'" class="w-3 h-3 md:w-4 md:h-4 text-amber-200" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M12.316 3.057a1 1 0 010 1.414L9.414 7l2.902 2.529a1 1 0 11-1.305 1.514l-3.5-3.043a1 1 0 010-1.514l3.5-3.043a1 1 0 011.414 0zm-4.632 0a1 1 0 000 1.414L10.586 7 7.684 9.529a1 1 0 101.305 1.514l3.5-3.043a1 1 0 000-1.514l-3.5-3.043a1 1 0 00-1.305 0z" clip-rule="evenodd"></path>
+              </svg>
+              <svg v-else-if="item.icon === 'certificate'" class="w-3 h-3 md:w-4 md:h-4 text-amber-200" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
               </svg>
               <div v-else class="w-2 h-2 rounded-full bg-amber-200"></div>
             </div>

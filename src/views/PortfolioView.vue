@@ -11,6 +11,17 @@ export default {
       ],
       items: [
         {
+          id: 5,
+          name: 'Estashirna (استشرنا) - Legal Consultation Platform',
+          category: 'frontend',
+          role: 'Frontend Team Lead',
+          imageUrl: '/img/portfolio-estashirna.png',
+          status: 'Graduation Project: Advanced legal consultation web application connecting specialized lawyers with citizens, featuring 12 core React components, full RTL Arabic design, and secure authentication.',
+          tech: ['React 18', 'Tailwind CSS', 'Framer Motion', 'Axios', 'Lucide React', 'JWT'],
+          github: 'null',
+          demo: 'null'
+        },
+        {
           id: 1,
           name: 'Whales Academy - LMS Platform',
           category: 'fullstack',
@@ -105,6 +116,9 @@ export default {
                   </div>
                   
                   <div class="w-full flex flex-col gap-2 text-left">
+                    <div v-if="item.role" class="w-fit px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-amber-200/15 text-amber-200 border border-amber-200/40">
+                      ⚡ Role: {{ item.role }}
+                    </div>
                     <div class="title-text font-bold text-lg text-white hover:text-amber-200 transition-colors">
                       {{ item.name }}
                     </div>

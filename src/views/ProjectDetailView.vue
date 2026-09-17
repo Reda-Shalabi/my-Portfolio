@@ -4,7 +4,29 @@ export default {
     return {
       project: null,
       projects: [
-       {
+        {
+          id: 5,
+          name: 'Estashirna (استشرنا) - Legal Consultation Platform',
+          role: 'Frontend Team Lead',
+          imageUrl: '/img/portfolio-estashirna.png',
+          status: 'Graduation Project - Advanced Legal Consultation Platform connecting specialized lawyers with citizens under Egyptian law.',
+          tech: 'React 18.2.0, Tailwind CSS 3.3.6, Framer Motion 10.16.16, Axios 1.13.5, Lucide React 0.563.0, js-cookie, crypto-js, RESTful API, JWT',
+          github: 'null',
+          demo: 'null',
+          description: 'Graduation Project: An advanced legal consultation web platform designed to seamlessly connect specialized lawyers with citizens seeking instant legal advice supported by Egyptian law. As Frontend Team Lead, I directed the frontend architecture and led the team to build 12 scalable React components, ensured responsive and elegant Arabic RTL design, implemented robust JWT authentication with access/refresh token rotation and secure cookie handling, and developed real-time consultation chat functionality.',
+          features: [
+            'Frontend Team Leadership & Component Architecture',
+            'Full Arabic (RTL) Layout & Responsive UI',
+            '12 Modular React Components (Hero, Services, RoleSelection, Auth, Chat, etc.)',
+            'Dual-Role Authentication (Lawyer & Citizen Portals)',
+            'Secure JWT Token Management (Access/Refresh Tokens & crypto-js)',
+            'Real-Time Live Consultation Chat System',
+            'Smooth Framer Motion Transitions & Animations',
+            'RESTful API Integration with Axios & Python/Django Backend'
+          ],
+          videoUrl: null
+        },
+        {
           id: 1,
           name: 'Whales Academy - LMS Platform',
           imageUrl: '/img/image.png',
@@ -125,14 +147,17 @@ export default {
 
         <!-- Project Title -->
         <div class="fadein-bot">
+          <div v-if="project.role" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs md:text-sm font-semibold bg-amber-200/20 text-amber-200 border border-amber-200/40 mb-3">
+            <span>⚡ Role:</span> {{ project.role }}
+          </div>
           <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">{{ project.name }}</h1>
           <div class="h-1 w-32 bg-amber-200 mb-8"></div>
         </div>
 
-        <!-- Project Video Container -->
+        <!-- Project Video / Image Container -->
         <div class="relative mb-12 fade-zoom-in">
           <div class="relative rounded-2xl overflow-hidden border border-amber-200/30 shadow-2xl">
-            <div class="aspect-video bg-gradient-to-br from-[#1e1e1f] to-[#2a2a2a]">
+            <div class="aspect-video bg-gradient-to-br from-[#1e1e1f] to-[#2a2a2a] flex items-center justify-center">
               <!-- YouTube/Vimeo Embed -->
               <iframe v-if="project.videoUrl && (project.videoUrl.includes('youtube.com') || project.videoUrl.includes('youtu.be') || project.videoUrl.includes('vimeo.com'))"
                 :src="getEmbedUrl(project.videoUrl)"
@@ -150,7 +175,13 @@ export default {
                 preload="metadata">
                 Your browser does not support the video tag.
               </video>
-              <!-- Placeholder if no video -->
+              <!-- Project Image Banner -->
+              <div v-else-if="project.imageUrl" class="w-full h-full flex items-center justify-center bg-[#121212] overflow-hidden">
+                <img :src="project.imageUrl.startsWith('/') ? project.imageUrl : '/img/portfolio-' + project.imageUrl + '.png'" 
+                     :alt="project.name" 
+                     class="w-full h-full object-cover md:object-contain" />
+              </div>
+              <!-- Placeholder if no video and no image -->
               <div v-else class="w-full h-full flex flex-col items-center justify-center">
                 <div class="relative">
                   <div class="absolute inset-0 bg-amber-200/20 rounded-full blur-xl animate-pulse"></div>
@@ -161,7 +192,7 @@ export default {
                     </svg>
                   </div>
                 </div>
-                <p class="mt-4 text-amber-200/70">Add video URL to display here</p>
+                <p class="mt-4 text-amber-200/70">Project Showcase</p>
               </div>
             </div>
             <!-- Animated border glow -->
@@ -198,13 +229,21 @@ export default {
 
           <!-- Sidebar -->
           <div class="space-y-6">
+            <!-- Role Card (if exists) -->
+            <div v-if="project.role" class="bg-[#1e1e1f] border border-amber-200/30 rounded-xl p-6 fadein-left" style="animation-delay: 250ms;">
+              <h3 class="text-xl font-bold text-amber-200 mb-2">My Role</h3>
+              <p class="text-white font-semibold text-base flex items-center gap-2">
+                <span>👑</span> {{ project.role }}
+              </p>
+            </div>
+
             <!-- Tech Stack -->
             <div class="bg-[#1e1e1f] border border-[#383838] rounded-xl p-6 fadein-left" style="animation-delay: 300ms;">
               <h3 class="text-xl font-bold text-amber-200 mb-4">Tech Stack</h3>
               <div class="flex flex-wrap gap-2">
-                <span v-for="(tech, index) in project.tech.split(', ')" :key="index"
+                <span v-for="(tech, index) in (project.tech.includes(',') ? project.tech.split(',') : [project.tech])" :key="index"
                   class="px-3 py-1 bg-amber-200/10 border border-amber-200/30 rounded-full text-amber-200 text-sm">
-                  {{ tech }}
+                  {{ tech.trim() }}
                 </span>
               </div>
             </div>

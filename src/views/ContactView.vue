@@ -33,7 +33,7 @@ export default {
 
       try {
         await emailjs.send('service_x9sa7el', 'template_yfb2o9c', {
-          to_email: 'redavd12@gmail.com',
+          to_email: 'redashalabi859@gmail.com',
           from_name: this.formData.name,
           from_email: this.formData.email,
           subject: this.formData.subject,
@@ -91,8 +91,8 @@ export default {
                 </div>
                 <div>
                   <h3 class="text-white font-semibold text-lg">Email</h3>
-                  <a href="redavd12@gmail.com" class="text-amber-200 hover:text-amber-100 transition-colors">
-                    redavd12@gmail.com
+                  <a href="mailto:redashalabi859@gmail.com" class="text-amber-200 hover:text-amber-100 transition-colors">
+                    redashalabi859@gmail.com
                   </a>
                 </div>
               </div>
@@ -107,15 +107,15 @@ export default {
                   </svg>
                 </div>
                 <div>
-                    <h3 class="text-white font-semibold text-lg">Phone</h3>
+                  <h3 class="text-white font-semibold text-lg">Phone / WhatsApp</h3>
                   <a 
-                    href="https://wa.me/201092945912?text=Hello%20Reda" 
+                    href="https://wa.me/201515192679?text=Hello%20Reda" 
                     target="_blank" 
                     class="text-amber-200 hover:text-amber-100 transition-colors"
                   >
-                   WhatsApp / Call me – Reda Shalabi
+                    +20 1515192679
                   </a>
-              </div>
+                </div>
 
               </div>
             </div>
